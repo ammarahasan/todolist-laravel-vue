@@ -11,13 +11,13 @@
 </template>
 
 <script>
-import addItemForm from "./addItemForm.vue";
-import listView from "./ListView.vue";
+import AddItemForm from "./addItemForm";
+import ListView from "./ListView.vue";
 
-export default {
+const App = {
     components: {
-        addItemForm,
-        listView
+        "add-item-form": AddItemForm,
+        "list-view": ListView
     },
     data: function() {
         return {
@@ -40,6 +40,8 @@ export default {
         this.getList();
     }
 };
+
+export default App;
 </script>
 
 <style scoped>

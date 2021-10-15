@@ -12,7 +12,7 @@
 <script>
 import axios from "axios";
 
-export default {
+const AddItemForm = {
     data: function() {
         return {
             item: {
@@ -40,6 +40,8 @@ export default {
         }
     }
 };
+
+export default AddItemForm;
 </script>
 
 <style scoped>

@@ -11,14 +11,16 @@
 </template>
 
 <script>
-import listItem from "./ListItem";
+import ListItem from "./ListItem";
 
-export default {
+const ListView = {
     props: ["items"],
     components: {
-        listItem
+        "list-item": ListItem
     }
 };
+
+export default ListView;
 </script>
 
 <style scoped>

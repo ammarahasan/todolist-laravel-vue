@@ -17,7 +17,7 @@
 <script>
 import axios from "axios";
 
-export default {
+const ListItem = {
     props: ["item"],
     methods: {
         updateCheck() {
@@ -46,6 +46,8 @@ export default {
         }
     }
 };
+
+export default ListItem;
 </script>
 
 <style scoped>

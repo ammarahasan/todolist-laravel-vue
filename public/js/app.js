@@ -12136,7 +12136,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+var ListItem = {
   props: ["item"],
   methods: {
     updateCheck: function updateCheck() {
@@ -12162,7 +12162,8 @@ __webpack_require__.r(__webpack_exports__);
       });
     }
   }
-});
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItem);
 
 /***/ }),
 
@@ -12191,12 +12192,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+var ListView = {
   props: ["items"],
   components: {
-    listItem: _ListItem__WEBPACK_IMPORTED_MODULE_0__["default"]
+    "list-item": _ListItem__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
-});
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListView);
 
 /***/ }),
 
@@ -12225,7 +12227,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+var AddItemForm = {
   data: function data() {
     return {
       item: {
@@ -12256,7 +12258,8 @@ __webpack_require__.r(__webpack_exports__);
       });
     }
   }
-});
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddItemForm);
 
 /***/ }),
 
@@ -12271,7 +12274,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _addItemForm_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addItemForm.vue */ "./resources/js/vue/addItemForm.vue");
+/* harmony import */ var _addItemForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addItemForm */ "./resources/js/vue/addItemForm.vue");
 /* harmony import */ var _ListView_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ListView.vue */ "./resources/js/vue/ListView.vue");
 //
 //
@@ -12287,10 +12290,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+var App = {
   components: {
-    addItemForm: _addItemForm_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    listView: _ListView_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    "add-item-form": _addItemForm__WEBPACK_IMPORTED_MODULE_0__["default"],
+    "list-view": _ListView_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
@@ -12311,7 +12314,8 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     this.getList();
   }
-});
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
 /***/ }),
 
@@ -12337,8 +12341,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__.library.add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faPlusSquare, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faTrash);
 vue__WEBPACK_IMPORTED_MODULE_4__["default"].component("font-awesome-icon", _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon);
-var app = new vue__WEBPACK_IMPORTED_MODULE_4__["default"]({
-  el: "#app",
+var application = new vue__WEBPACK_IMPORTED_MODULE_4__["default"]({
+  el: "#application",
   components: {
     App: _vue_app__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
